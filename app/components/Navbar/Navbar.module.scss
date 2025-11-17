@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  gap: 1rem;
+  background-color:white;
+  border-bottom:2px solid #e5e7eb;  
+  padding:1rem;
+  .link {
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #3b82f6;
+    }
+  }
+}

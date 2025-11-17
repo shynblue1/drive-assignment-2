@@ -1,13 +1,11 @@
 import Link from 'next/link'
-import React from 'react'
+import styles from './Navbar.module.scss';
 
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
     return (
-        <header className='bg-white border-2 border-gray-200 p-4 flex justify-between items-center'>
+           <header className={`${styles.navbar}`}>
             <span className='text-4xl font-[sans,arial] flex-1'>Times of India</span>
-            <div className="flex flex-0.5 gap-4 p-2 rounded-lg">
+            <div className={`flex gap-4 p-2 rounded-lg ${styles.navLinks}`}>
                 <Link href='/' className='text-blue-500 hover:underline ml-2 text-lg'>Home</Link>
                 <Link href='/top-sources' className='text-blue-500 hover:underline ml-2 text-lg'>Top Sources</Link>
                 <Link href='/search-news' className='text-blue-500 hover:underline ml-2 text-lg'>Search News</Link>
